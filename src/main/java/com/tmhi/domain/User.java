@@ -1,48 +1,58 @@
 package com.tmhi.domain;
 
 
-import javafx.scene.chart.PieChart;
-import org.hibernate.annotations.Cache;
-import org.hibernate.annotations.CacheConcurrencyStrategy;
-
-import javax.persistence.*;
 import java.util.Date;
 
-@Entity
-@Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-@Table(name = "TMHI_USERS")
 public class User extends BaseDomain {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "TU_UID")
+    /**
+     * 用户ID
+     */
     private int userId;
 
-    @Column(name = "TU_MAILADDRESS")
+    /**
+     * 注册邮箱
+     */
     private String userMail;
 
-    @Column(name = "TU_UNAME")
+    /**
+     * 用户名
+     */
     private String userName;
 
-    @Column(name = "TU_PASSWORD")
+    /**
+     * 用户密码
+     */
     private String userPwd;
 
-    @Column(name = "TU_UGID")
+    /**
+     * 用户游戏名
+     */
     private String userGameName;
 
-    @Column(name = "TU_SIGNUP_DATE")
+    /**
+     * 注册日期
+     */
     private Date userSignUpDate;
 
-    @Column(name = "TU_ACTIVITY")
+    /**
+     * 激活状态（0:未激活 1:已激活）
+     */
     private boolean userActivity;
 
-    @Column(name = "TU_ACTIVITY_CODE")
+    /**
+     * 激活码
+     */
     private String userActivityCode;
 
-    @Column(name = "TU_ACTIVITY_DATE")
+    /**
+     * 激活日期
+     */
     private Date userActivityDate;
 
-    @Column(name = "TU_PERMISSION")
+    /**
+     * 用户权限（1:普通用户 2:管理用户）
+     */
     private int userPermission;
 
     public int getUserId() {

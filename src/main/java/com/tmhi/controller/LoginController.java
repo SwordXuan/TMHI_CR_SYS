@@ -1,4 +1,4 @@
-package com.tmhi.web;
+package com.tmhi.controller;
 
 public class LoginController {
 }
