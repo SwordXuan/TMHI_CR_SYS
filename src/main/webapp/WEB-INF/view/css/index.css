@@ -23,6 +23,16 @@ a[href^="mailto"] {
 a:hover {
 	background-color: #D3D3D3;
 	padding: 6px;
+	transition-delay: 50ms;
+	-webkit-transition-delay: 50ms;
+	-o-transition-delay: 50ms;
+	-moz-transition-delay: 50ms;
+	-ms-transition-delay: 50ms;
+	-webkit-transition-duration: 200ms;
+	-moz-transition-duration: 200ms;
+	-ms-transition-duration: 200ms;
+	-o-transition-duration: 200ms;
+	transition-property: background-color;
 }
 
 a[href^="mailto"]:hover {
@@ -36,13 +46,14 @@ header
 *************/
 .header {
 	text-align: center;
+	text-shadow: 4px 4px 6px grey;
 	font-size: 35px;
 	font-weight: bold;
 	width: 400px;
 	height: 50px;
-	line-height: 30px;
+	line-height: 34px;
 	margin: auto;
-	padding: 10px 0;
+	padding: 10px 0 20px 0;
 	/*background-image: url("../img/logo.jpg");*/
 	/*padding: 10px 0;*/
 	/*border-bottom: solid 2px grey;*/
@@ -104,24 +115,35 @@ content_box
 	margin: 10px auto;
 	padding: 0 30px;
 	background-color: #F5F5F5;
-	font-weight: lighter;
+	font-weight: normal;
 	line-height: 22px;
 }
 
-h1 {
+.text_title {
 	padding: 20px 0;
 	margin: 0;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: normal;
+	text-align: center;
 }
 
 .text {
-	font-size: 12px;
+	font-size: 13px;
+	text-indent: 26px;
+}
+
+.join_group {
+	padding: 4px 0 0 0;
+}
+
+.join_group a:hover {
+	padding: 0;
+	background-color: inherit;
 }
 
 .incription {
 	text-align: right;
-	font-size: 11px;
+	font-size: 13px;
 	padding: 10px 0;
 }
 
@@ -212,6 +234,6 @@ footer
 	background-color: #F5F5F5;
 }
 
-.copyright, .contact, .contact .mailto {
+.copyright, .contact, .mailto {
 	font-family: "Baskerville", "Times New Roman";
 }
