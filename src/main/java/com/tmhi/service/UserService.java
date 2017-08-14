@@ -1,4 +1,5 @@
 package com.tmhi.service;
 
-public class UserService {
+public interface UserService {
+
 }

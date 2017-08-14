@@ -1,5 +1,6 @@
 package com.tmhi.dao;
 
-public class UserDao {
+public interface UserDao {
 	//Hiei is a rbq;
+    public void rbq();
 }
