@@ -27,8 +27,12 @@
 			<value>
 				/css/** = anon
 				/img/** = anon
+				/docs/** = anon
+				/fonts/** = anon
+				/js/** = anon
 				/admin/** = anon
 				/view/** = anon
+				/system/** = anon
 				/** = authc
 				
 				<!-- authc -->
