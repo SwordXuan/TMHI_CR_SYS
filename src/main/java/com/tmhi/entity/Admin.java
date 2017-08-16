@@ -21,7 +21,7 @@ public class Admin implements java.io.Serializable {
     /**
      * 管理员密码
      */
-    private String tu_password;
+    private String tuPassword;
 
     /**
      * 管理员加密盐
@@ -37,10 +37,10 @@ public class Admin implements java.io.Serializable {
         super();
     }
 
-    public Admin(int tuUid, String tuMailAddress, String tu_password, String tuSalt, String tuActicity) {
+    public Admin(int tuUid, String tuMailAddress, String tuPassword, String tuSalt, String tuActicity) {
         this.tuUid = tuUid;
         this.tuMailAddress = tuMailAddress;
-        this.tu_password = tu_password;
+        this.tuPassword = tuPassword;
         this.tuSalt = tuSalt;
         this.tuActicity = tuActicity;
     }
@@ -50,7 +50,7 @@ public class Admin implements java.io.Serializable {
         return "Admin{" +
                 "tuUid=" + tuUid +
                 ", tuMailAddress='" + tuMailAddress + '\'' +
-                ", tu_password='" + tu_password + '\'' +
+                ", tu_password='" + tuPassword + '\'' +
                 ", tuSalt='" + tuSalt + '\'' +
                 ", tuActicity='" + tuActicity + '\'' +
                 '}';
@@ -72,12 +72,12 @@ public class Admin implements java.io.Serializable {
         this.tuMailAddress = tuMailAddress;
     }
 
-    public String getTu_password() {
-        return tu_password;
+    public String getTuPassword() {
+        return tuPassword;
     }
 
     public void setTu_password(String tu_password) {
-        this.tu_password = tu_password;
+        this.tuPassword = tuPassword;
     }
 
     public String getTuSalt() {
