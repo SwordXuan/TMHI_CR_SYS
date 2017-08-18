@@ -9,12 +9,11 @@
     <meta name="renderer" content="webkit" />
     <title>约车系统后台管理系统</title>
     <!-- CSS文件 -->
-    <link rel="../fonts icon" href="favicon.ico">
     <link href="../css/bootstrap.min14ed.css" rel="stylesheet">
     <link href="../css/font-awesome.min93e3.css" rel="stylesheet">
     <link href="../css/animate.min.css" rel="stylesheet">
     <link href="../css/style.min862f.css" rel="stylesheet">
-
+    <link href="../css/bootstrap-table.css" rel="stylesheet">
 </head>
 
 <body class="gray-bg top-navigation">
@@ -27,7 +26,7 @@
                         <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
                             <i class="fa fa-reorder"></i>
                         </button>
-                        <a href="#" class="navbar-brand">约车系统后台管理系统</a>
+                        <a href="#" class="navbar-brand">战舰约车系统后台管理系统</a>
                     </div>
                     <div class="navbar-collapse collapse" id="navbar">
                         <ul class="nav navbar-nav">
@@ -104,30 +103,30 @@
                         </div>
 
                         <div class="col-md-4">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-title">
-                                    <span class="label label-primary pull-right">今天</span>
-                                    <h5>访问人次</h5>
-                                </div>
-                                <div class="ibox-content">
+                                                          <div class="ibox float-e-margins">
+                                                              <div class="ibox-title">
+                                                                  <span class="label label-primary pull-right">今天</span>
+                                                                  <h5>访问人次</h5>
+                                                              </div>
+                                                              <div class="ibox-content">
 
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h1 class="no-margins"> 406,420</h1>
-                                            <div class="font-bold text-navy">44% <i class="fa fa-level-up"></i> <small>增长较快</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h1 class="no-margins">206,120</h1>
-                                            <div class="font-bold text-navy">22% <i class="fa fa-level-up"></i> <small>增长较慢</small>
-                                            </div>
-                                        </div>
-                                    </div>
+                                                                  <div class="row">
+                                                                      <div class="col-md-6">
+                                                                          <h1 class="no-margins"> 406,420</h1>
+                                                                          <div class="font-bold text-navy">44% <i class="fa fa-level-up"></i> <small>增长较快</small>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="col-md-6">
+                                                                          <h1 class="no-margins">206,120</h1>
+                                                                          <div class="font-bold text-navy">22% <i class="fa fa-level-up"></i> <small>增长较慢</small>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
 
 
-                                </div>
-                            </div>
-                        </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
                         <div class="col-md-4">
                             <div class="ibox float-e-margins">
                                 <div class="ibox-title">
@@ -148,20 +147,19 @@
                     </div>
 
                     <div id="toolbar" class="btn-group">
-                     <button id="btn_add" type="button" class="btn btn-default">
-                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
-                     </button>
-                     <button id="btn_edit" type="button" class="btn btn-default">
-                     <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>修改
-                     </button>
-                     <button id="btn_delete" type="button" class="btn btn-default">
-                     <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
-                     </button>
-                     </div>
-                     <table id="tb_departments"></table>
+                         <button id="btn_add" type="button" class="btn btn-default">
+                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
+                         </button>
+                         <button id="btn_edit" type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>修改
+                         </button>
+                         <button id="btn_delete" type="button" class="btn btn-default">
+                             <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+                         </button>
                      </div>
 
-
+                     <table id="indexTable"></table>
+                     </div>
                     </div>
 
                 </div>
@@ -172,21 +170,24 @@
                     By：SwordXuan
                 </div>
                 <div>
-                    <strong>Copyright</strong> 约车系统后台管理系统 &copy; 2017
+                    <strong>Copyright</strong> 战舰约车系统后台管理系统 &copy; 2017
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="../js/jquery.min.js?v=2.1.4"></script>
-    <script src="../js/bootstrap.min.js?v=3.3.6"></script>
-    <script src="../js/content.min.js?v=1.0.0"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/content.min.js?"></script>
     <script src="../js/plugins/flot/jquery.flot.js"></script>
     <script src="../js/plugins/flot/jquery.flot.tooltip.min.js"></script>
     <script src="../js/plugins/flot/jquery.flot.resize.js"></script>
     <script src="../js/plugins/chartJs/Chart.min.js"></script>
     <script src="../js/plugins/peity/jquery.peity.min.js"></script>
     <script src="../js/demo/peity-demo.min.js"></script>
+    <script src="../js/bootstrap-table.js"></script>
+    <script src="../js/bootstrap-table-zh-CN.js"></script>
+    <script src="index.js"></script>
     <script type="text/javascript">
 
     </script>
