@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-lazy-init="true">
+
+	<description>Shiro Configuration</description>
+	<bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+		<property name="hashAlgorithmName" value="MD5" />
+		<property name="hashIterations" value="1" />
+	</bean>
+	
+	<bean id="myRealm" class="com.tmhi.realm.MyRealm">
+		<property name="credentialsMatcher" ref="credentialsMatcher"></property>
+	</bean>
+	
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realm" ref="myRealm" />
+	</bean>
+	
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager"/>
+		<!--<property name="loginUrl" value="/loginView.jsp"/>
+		<property name="successUrl" value="/index.jsp"/>-->
+		<property name="filterChainDefinitions">
+			<value>
+				/css/** = anon
+				/img/** = anon
+				/docs/** = anon
+				/fonts/** = anon
+				/js/** = anon
+				/admin/** = anon
+				/view/** = anon
+				/system/** = anon
+				/** = authc
+				
+				<!-- authc -->
+			</value>
+		</property>
+	</bean>
+	<!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+	
+	
+</beans>

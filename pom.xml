@@ -11,6 +11,9 @@
     <description>TMHI Car Reservation System</description>
 
     <properties>
+        <!-- Shiro的版本管理 -->
+        <shiro.version>1.2.3</shiro.version>
+
         <file.encoding>UTF-8</file.encoding>
         <spring.version>4.2.5.RELEASE</spring.version>
         <slf4j.version>1.7.5</slf4j.version>
@@ -331,6 +334,40 @@
             <artifactId>druid</artifactId>
             <version>1.1.2</version>
         </dependency>
+
+        <!-- shiro 权限框架-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-web</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-cas</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-ehcache</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+        <!-- ehcache -->
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache-core</artifactId>
+            <version>2.5.3</version>
+        </dependency>
+
     </dependencies>
 
 
@@ -354,6 +391,13 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.2</version>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-all</artifactId>
+                <version>1.2.3</version>
+            </plugin>
+
             <!-- jetty插件 -->
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>
