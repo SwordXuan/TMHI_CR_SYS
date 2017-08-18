@@ -1,9 +1,12 @@
 /* =======================================================
 *
-* 	Template Style
-*	Edit this section
+*   Author    :   Hiei
+*   Time      :   2017/08/16
+*	Explain   :   登录/注册/找回密码 通用CSS样式
+*   Version   :   1.0
 *
 * ======================================================= */
+
 body {
   font-family: "Hiragino Sans GB", "微软雅黑", "Microsoft Yahei", Arial, sans-serif;
   line-height: 1.5;
@@ -48,7 +51,7 @@ a:hover {
   color: #696969;
 }
 
-.fh5co-form .login-header {
+.fh5co-form .form-header {
   font-weight: bold;
   color: #696969;
 }
@@ -168,6 +171,11 @@ input, textarea {
 
 .js .animate-box {
   opacity: 0;
+}
+
+[name="input-error"] {
+  font-size: small;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

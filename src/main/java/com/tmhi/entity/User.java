@@ -1,8 +1,14 @@
-package com.tmhi.domain;
+package com.tmhi.entity;
 
 
 import java.util.Date;
 
+/**
+ * Author   :   Hiei
+ * Time     :   2017/08/16
+ * Explain  :   User实体类
+ * Version  :   1.0
+ */
 public class User extends BaseDomain {
 
     /**
@@ -29,6 +35,11 @@ public class User extends BaseDomain {
      * 用户游戏名
      */
     private String userGameName;
+
+    /**
+     * 用户游戏舰队名
+     */
+    private String userFleetName;
 
     /**
      * 注册日期
@@ -93,6 +104,14 @@ public class User extends BaseDomain {
 
     public void setUserGameName(String userGameName) {
         this.userGameName = userGameName;
+    }
+
+    public String getUserFleetName() {
+        return userFleetName;
+    }
+
+    public void setUserFleetName(String userFleetName) {
+        this.userFleetName = userFleetName;
     }
 
     public Date getUserSignUpDate() {
