@@ -43,23 +43,27 @@
 
 
 					<!-- Start Sign In Form -->
-					<form action="#" class="fh5co-form animate-box" data-animate-effect="fadeInRight">
+					<form id="signup-form" action="#" class="fh5co-form animate-box" data-animate-effect="fadeInRight">
 						<h2 class="form-header">账号注册</h2>
 						<div class="form-group">
-							<div id="email-input-error" name="input-error" class="alert alert-danger" role="alert">您输入的邮箱地址格式有误。</div>
-							<div id="password-input-error" name="input-error" class="alert alert-danger" role="alert">您输入的密码格式有误。</div>
+							<div id="email-input-error" name="input-error" class="alert alert-danger" role="alert">请输入格式正确的邮箱地址。</div>
+							<div id="password-input-error" name="input-error" class="alert alert-danger" role="alert">请输入长度为6-12位密码，且只能由字母、数字、下划线组成。</div>
+							<div id="re-password-input-error" name="input-error" class="alert alert-danger" role="alert">您两次输入的密码不一致。</div>
 						</div>
 						<div class="form-group">
 							<label for="email" class="sr-only">电子邮箱</label>
-							<input type="email" class="form-control" id="email" placeholder="电子邮箱" autocomplete="off">
+							<input data-rule='pattern:"^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(.[a-zA-Z0-9_-]+)+$"'
+								   type="email" class="form-control" id="email" placeholder="电子邮箱" autocomplete="off">
 						</div>
 						<div class="form-group">
 							<label for="password" class="sr-only">密码</label>
-							<input type="password" class="form-control" id="password" placeholder="请输入密码" autocomplete="off">
+							<input data-rule='pattern:"^[a-zA-Z0-9_]*$"|minlength:6|maxlength:12'
+								   type="password" class="form-control" id="password" placeholder="请输入密码" autocomplete="off">
 						</div>
 						<div class="form-group">
 							<label for="re-password" class="sr-only">请再输入一次密码</label>
-							<input type="password" class="form-control" id="re-password" placeholder="请再输入一次密码" autocomplete="off">
+							<input data-rule='confirmed:"password"'
+								   type="password" class="form-control" id="re-password" placeholder="请再输入一次密码" autocomplete="off">
 						</div>
 						<div class="form-group">
 							<p>已经注册过了？ <a href="../view/signin.html">登录</a></p>
@@ -96,7 +100,9 @@
 
 	<!-- Customized Source -->
 	<!-- validator JS -->
+	<script src="../js/jquery.md5.js"></script>
 	<script src="../js/validator.js"></script>
+	<script src="../js/input_validator.js"></script>
 	<!-- SignUp JS -->
 	<script src="signup.js"></script>
 

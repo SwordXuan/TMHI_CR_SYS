@@ -17,7 +17,7 @@ $(function () {
             if (new_val !== undefined)
                 val = new_val;
 
-            // 首先执行非空验证
+            // 执行非空验证
             if (rule.required && !val)
                 return false;
 
@@ -31,6 +31,7 @@ $(function () {
                 if (!valid) return false;
             }
 
+            // 验证通过
             return true;
         }
 
@@ -48,22 +49,14 @@ $(function () {
 
         // 最大长度验证
         this.vali_maxlength = function () {
-            pre_length();
+            pre_string();
             return val.length <= rule.maxlength;
         }
 
         // 最小长度验证
         this.vali_minlength = function () {
-            pre_length();
+            pre_string();
             return val.length >= rule.minlength;
-        }
-
-        // 非空验证
-        this.vali_required = function () {
-            var real = $.trim(val);
-            if (!real && real !== 0)
-                return false;
-            return true;
         }
 
         // 正则验证
@@ -72,13 +65,18 @@ $(function () {
             return reg.test(val);
         }
 
+        // 二次验证
+        this.vali_confirmed = function () {
+            return $('#' + rule.confirmed).val() === val;
+        }
+
         // 数据验证前的预处理（max/min value）
         function pre_value () {
             val = parseFloat(val);
         }
 
-        // 数据验证前的预处理（max/min length）
-        function pre_length () {
+        // 数据验证前的预处理（max/min string）
+        function pre_string () {
             val = val.toString();
         }
     }
