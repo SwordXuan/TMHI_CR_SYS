@@ -178,4 +178,9 @@ input, textarea {
   display: none;
 }
 
+[name="input-success"] {
+  font-size: small;
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

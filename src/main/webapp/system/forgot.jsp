@@ -56,7 +56,7 @@
 								   type="email" class="form-control" id="email" placeholder="注册邮箱" autocomplete="off">
 						</div>
 						<div class="form-group">
-							<p><a href="../view/signin.html">登录</a> or <a href="signup.jsp">注册</a></p>
+							<p>我知道密码？<a href="../view/signin.html">登录</a> or <a href="signup.jsp">注册</a></p>
 						</div>
 						<div class="form-group">
 							<input type="submit" value="发&nbsp;&nbsp;送" class="btn btn-primary">
