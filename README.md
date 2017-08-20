@@ -12,11 +12,13 @@ controller      query  remove  modify  add
 
 每个文件写作者以及该文件作用
 /**
- *  author    ： SwordXuan
- *  time      ： 2017-08-15
- *  explain   ： 用户实体类
+ * Author   :   Hiei
+ * Time     :   2017/08/16
+ * Explain  :   实体类基类
+ * Version  :   1.0
  */
-
+ 
+（重大修改请往后追加comment并迭代版本号   -- by Hiei）
 
 
  前台页面写在view里
