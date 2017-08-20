@@ -67,6 +67,7 @@ $(function () {
 
         // 二次验证
         this.vali_confirmed = function () {
+            pre_string();
             return $('#' + rule.confirmed).val() === val;
         }
 

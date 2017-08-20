@@ -12,8 +12,8 @@ body {
   line-height: 1.5;
   font-size: 16px;
   color: #848484;
-  background-color: #F5F5F5;
-  /*background: #ffffff url(../img/login_bg.png) repeat;*/
+  /*background-color: #F5F5F5;*/
+  background: #ffffff url(../img/main_bg.jpeg) repeat;
 }
 
 a {

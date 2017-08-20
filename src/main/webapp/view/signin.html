@@ -1,5 +1,8 @@
 <!doctype html>
-<html class="no-js" lang="zh-cmn-Hans">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh-cmn-Hans"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="zh-cmn-Hans"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="zh-cmn-Hans"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-cmn-Hans"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -9,6 +12,7 @@
   <meta name="Description" content="这里是针对战舰世界国服南区<型月重工>舰队设计使用的在线约车系统。">
   <meta name="author" content="Hiei">
   <title>约车系统-登录</title>
+
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- <link rel="shortcut icon" href="favicon.ico"> -->
 
@@ -32,7 +36,7 @@
         <div class="col-md-12 text-center">
           <div class="page-header">
             <h1>型月重工
-              <small>-&nbsp;TYPE-MOON Heavy Industries Inc.&nbsp;-</small>
+              <small>TYPE-MOON Heavy Industries Inc.</small>
             </h1>
           </div>
         </div>
@@ -48,7 +52,7 @@
             </div>
             <div class="form-group">
               <label for="email" class="sr-only">邮箱地址</label>
-              <input data-rule='pattern:"^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(.[a-zA-Z0-9_-]+)+$"'
+              <input data-rule='pattern:"^([a-zA-Z0-9])+([a-zA-Z0-9._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9._-]+)+$"'
                      type="email" class="form-control" id="email" placeholder="注册邮箱" autocomplete="off">
             </div>
             <div class="form-group">
@@ -60,7 +64,7 @@
               <label for="remember"><input type="checkbox" id="remember"> 记住我</label>
             </div>
             <div class="form-group">
-              <p>我还没有账号？&nbsp;<a href="../system/signup.jsp">注册</a> | <a href="#">忘记密码？</a></p>
+              <p>我还没有账号？&nbsp;<a href="../system/signup.jsp">注册</a> | <a href="../system/forgot.jsp">忘记密码？</a></p>
             </div>
             <div class="form-group">
               <input type="submit" value="登&nbsp;&nbsp;录" class="btn btn-primary">

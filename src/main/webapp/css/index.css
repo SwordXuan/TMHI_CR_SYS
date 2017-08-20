@@ -18,6 +18,10 @@ common
 	text-decoration: none;
 }
 
+body {
+	background: #ffffff url(../img/main_bg.jpeg) repeat;
+}
+
 /*************
 a
 *************/
@@ -239,7 +243,6 @@ footer
 	text-align: center;
 	line-height: 18px;
 	font-size: 12px;
-	background-color: #F5F5F5;
 }
 
 .copyright, .contact, .mailto {
