@@ -45,7 +45,7 @@
 
 					<!-- Start Sign In Form -->
 					<form action="#" id="forgot-form" class="fh5co-form animate-box" data-animate-effect="fadeInRight">
-						<h2>找回密码</h2>
+						<h2 class="form-header">找回密码</h2>
 						<div class="form-group">
 							<div name="input-success" class="alert alert-success" role="alert">邮件已发送至您的注册邮箱。</div>
 							<div id="email-input-error" name="input-error" class="alert alert-danger" role="alert">您输入的邮箱地址格式有误。</div>
