@@ -13,7 +13,7 @@
 		<meta name="author" content="Hiei">
 		<title>约车系统-找回密码</title>
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<!--<link rel="shortcut icon" href="favicon.ico">--!>
+	<!--<link rel="shortcut icon" href="favicon.ico">-->
 
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/animate.css">
