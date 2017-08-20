@@ -12,7 +12,7 @@ controller      query  remove  modify  add
 
 每个文件写作者以及该文件作用
 /**
- * Author   :   Hiei
+ * Author   :   SwordXuan
  * Time     :   2017/08/16
  * Explain  :   实体类基类
  * Version  :   1.0
